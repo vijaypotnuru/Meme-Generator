@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 
 export const AppContainer = styled.div`
   display: flex;
@@ -6,13 +6,13 @@ export const AppContainer = styled.div`
   align-items: center;
   min-height: 100vh;
 `
-
 export const MemeGeneratorContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 550px;
-  padding-top: 24px;
+  padding-top: 32px;
+  padding-right: 24px;
   padding-bottom: 32px;
   padding-left: 24px;
   @media screen and (min-width: 768px) {
@@ -20,7 +20,6 @@ export const MemeGeneratorContainer = styled.div`
     max-width: 1140px;
   }
 `
-
 export const Heading = styled.h1`
   color: #35469c;
   font-family: 'Open Sans';
@@ -42,7 +41,6 @@ export const FormAndMemeContainer = styled.div`
     flex-direction: row-reverse;
   }
 `
-
 export const MemeContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -80,7 +78,8 @@ export const MemeGeneratorForm = styled.form`
 export const CustomLabel = styled.label`
   color: #7e858e;
   font-family: 'Open Sans';
-  font-weight: 12px;
+  font-weight: 500;
+  font-size: 12px;
   line-height: 1.4;
   margin-bottom: 0px;
 `
@@ -113,7 +112,6 @@ export const CustomSelect = styled.select`
   margin-bottom: 10px;
   outline: none;
 `
-
 export const CustomOption = styled.option`
   font-size: 16px;
   padding-top: 12px;
@@ -136,7 +134,7 @@ export const GenerateButton = styled.button`
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 24px;
-  padding-top: 15px;
+  margin-top: 15px;
   cursor: pointer;
   outline: none;
 `

@@ -76,7 +76,6 @@ class MemeGenerator extends Component {
 
   onGenerateMeme = event => {
     event.preventDefault()
-
     const {
       backgroundImageUrlInput,
       topTextInput,
@@ -102,34 +101,31 @@ class MemeGenerator extends Component {
 
     return (
       <MemeGeneratorForm onSubmit={this.onGenerateMeme}>
-        <CustomLabel htmlFor="backgroundImageUrl">Image Url</CustomLabel>
+        <CustomLabel htmlFor="backgroundImageUrl">Image URL</CustomLabel>
         <CustomInput
           type="text"
           id="backgroundImageUrl"
           value={backgroundImageUrlInput}
           onChange={this.onChangeBackgroundImage}
-          placeHolder="Enter the Image URL"
+          placeholder="Enter the Image URL"
         />
-
         <CustomLabel htmlFor="topText">Top Text</CustomLabel>
         <CustomInput
           type="text"
           id="topText"
           value={topTextInput}
           onChange={this.onChangeTopTextInput}
-          placeHolder="Enter the Top Text"
+          placeholder="Enter the Top Text"
         />
-
-        <CustomLabel htmlFor="bottomText">Bottom Text</CustomLabel>
+        <CustomLabel htmlFor="topText">Bottom Text</CustomLabel>
         <CustomInput
           type="text"
           id="bottomText"
           value={bottomTextInput}
           onChange={this.onChangeBottomTextInput}
-          placeHolder="Enter the Bottom Text"
+          placeholder="Enter the Bottom Text"
         />
-
-        <CustomLabel htmlFor="backgroundImageUrl">Font Size</CustomLabel>
+        <CustomLabel htmlFor="select">Font Size</CustomLabel>
         <CustomSelect
           id="select"
           value={activeFontSizeOptionId}
